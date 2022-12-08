@@ -1,4 +1,4 @@
-def main():
+def part1():
     file = open("input.txt")
 
     bits = {}
@@ -40,9 +40,10 @@ def main():
     epsilonRateString = "".join(epsilonRateStringArray)
     epsilonRate = int(epsilonRateString, 2)
     
-    print("Gamma rate: {0} ({1})".format(gammaRate, gammaRateString))
-    print("Epsilon rate: {0} ({1})".format(epsilonRate, epsilonRateString))
-    print("Product: {0}".format(gammaRate * epsilonRate))
+    print("Part 1:")
+    print("| Gamma rate: {0} ({1})".format(gammaRate, gammaRateString))
+    print("| Epsilon rate: {0} ({1})".format(epsilonRate, epsilonRateString))
+    print("| Product: {0}".format(gammaRate * epsilonRate))
 
 if __name__ == "__main__":
-    main()
+    part1()
