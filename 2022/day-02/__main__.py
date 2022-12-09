@@ -37,7 +37,6 @@ def part2():
 
             score = move + (0 if round[1] == 1 else 3 if round[1] == 2 else 6)
 
-
             totalScore += score
     
     print("Part 2: {0}".format(totalScore))
